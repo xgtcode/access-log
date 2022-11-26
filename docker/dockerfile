@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+ADD access-log-app /access-log-app
+expose 8080
+RUN chmod +x /access-log-app
+CMD /tmp/access-log-app
